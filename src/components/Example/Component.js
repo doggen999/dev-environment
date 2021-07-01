@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import styles from "./component.css";
 
 export const Component = () => {
   const [time, setTime] = useState(new Date());
@@ -12,7 +13,7 @@ export const Component = () => {
     };
   });
   return (
-    <div>
+    <div className={`${styles.foo}`}>
       <h1>{time.toLocaleTimeString()}</h1>
     </div>
   );
