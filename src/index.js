@@ -1,22 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ReactDom from "react-dom";
+import { default as ExampleComponent } from "./components/Example";
 
-const App = () => {
-  const [time, setTime] = useState(new Date());
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(new Date(), 1000);
-    });
-    return () => {
-      clearInterval(interval);
-    };
-  });
-  return (
-    <div>
-      <h1>{time.toLocaleTimeString()}</h1>
-    </div>
-  );
-};
-
-ReactDom.render(<App />, document.getElementById("app"));
+ReactDom.render(<ExampleComponent />, document.getElementById("app"));
