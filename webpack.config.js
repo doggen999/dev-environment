@@ -14,13 +14,8 @@ module.exports = {
         use: { loader: "babel-loader" },
       },
       {
-        test: /\.css$/i,
-        use: [
-          { loader: "style-loader" },
-          {
-            loader: "css-loader?modules=true",
-          },
-        ],
+        test: /\.(s?(a|c)ss)$/i,
+        use: ["style-loader", "css-loader?modules", "sass-loader"],
       },
     ],
   },
