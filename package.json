@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
+    "generateComponent": "node src/cli/generateComponent",
     "start": "webpack watch --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
