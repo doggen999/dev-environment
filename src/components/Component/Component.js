@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+
 import styles from "./Component.scss";
 
-export const Component = () => {
+export const Component = (props) => {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -13,10 +15,17 @@ export const Component = () => {
     };
   });
   return (
-    <div className={styles.foo}>
-      <div className={`${styles.bar}`}>
-        <h1>{time.toLocaleTimeString()}</h1>
+    <div className={styles.component}>
+      <div>
+        <h1 className={`${styles.heading}`}>{props.heading}</h1>
+        <div className={styles.content}>
+          {time.toLocaleTimeString()}
+        </div>
       </div>
     </div>
   );
+};
+
+Component.propTypes = {
+  heading: PropTypes.string.isRequired,
 };

@@ -1,7 +1,10 @@
-.foo {
+.component {
   background-color: cyan;
 
-  .bar {
+  .heading {
     color: pink;
+  }
+  .content {
+    color: greenyellow;
   }
 }
