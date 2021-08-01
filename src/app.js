@@ -1,6 +1,5 @@
 import React from "react";
-
-import styles from './app.scss'
+import styles from "./app.scss";
 
 import Component from "./components/Component";
 
