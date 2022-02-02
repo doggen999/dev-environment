@@ -7,7 +7,7 @@
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "generateComponent": "node src/cli/generateComponent",
-    "start": "webpack watch --mode development",
+    "start": "webpack server --open --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -39,6 +39,7 @@
     "sass-loader": "~12.1.0",
     "style-loader": "~3.0.0",
     "webpack": "~5.41.1",
-    "webpack-cli": "~4.7.2"
+    "webpack-cli": "~4.7.2",
+    "webpack-dev-server": "~4.7.4"
   }
 }
