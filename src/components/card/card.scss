@@ -1,0 +1,25 @@
+.card {
+  aspect-ratio: 1/1;
+
+  border: solid 1px black;
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 200ms;
+
+  &.dimmed {
+    $color: grey;
+
+    color: $color;
+    border-color: $color;
+  }
+
+  &:not(.dimmed) {
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
