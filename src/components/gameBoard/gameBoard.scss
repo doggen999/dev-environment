@@ -1,0 +1,16 @@
+.wrapper {
+  max-width: 700px;
+}
+
+.boardHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.board {
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  gap: 10px;
+
+}

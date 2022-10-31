@@ -1,11 +1,10 @@
-import React from "react";
-import faker from "faker";
-import styles from "./app.scss";
+import React from 'react';
+import styles from './app.scss';
 
-import Component from "./components/Component";
+import GameBoard from './components/gameBoard/GameBoard';
 
 export default () => (
-  <div className={styles.app}>
-    <Component heading={faker.company.catchPhrase()} />
+  <div className={styles.wrapper}>
+    <GameBoard />
   </div>
 );

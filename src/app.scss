@@ -1,4 +1,9 @@
-@import "./styles/index.scss";
+@import './styles/index.scss';
 
-.app {
+.wrapper {
+  max-width: 700px;
+  height: max-content;
+  position: fixed;
+  inset: 0;
+  margin: auto;
 }
