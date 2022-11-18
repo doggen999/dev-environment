@@ -8,7 +8,9 @@
     "build:dev": "webpack --mode development",
     "generateComponent": "node src/cli/generateComponent",
     "start": "webpack server --open --mode development",
-    "test": "jest"
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,15 @@
     "@babel/core": "~7.14.6",
     "@babel/preset-env": "~7.14.7",
     "@babel/preset-react": "~7.14.5",
+    "@storybook/addon-actions": "~6.5.13",
+    "@storybook/addon-essentials": "~6.5.13",
+    "@storybook/addon-interactions": "~6.5.13",
+    "@storybook/addon-links": "~6.5.13",
+    "@storybook/builder-webpack5": "~6.5.13",
+    "@storybook/manager-webpack5": "~6.5.13",
+    "@storybook/preset-scss": "~1.0.3",
+    "@storybook/react": "~6.5.13",
+    "@storybook/testing-library": "^0.0.13",
     "@testing-library/react": "~12.1.5",
     "babel-jest": "^29.2.2",
     "babel-loader": "~8.2.2",

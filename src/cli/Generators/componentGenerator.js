@@ -5,7 +5,7 @@ function content(name) {
 
 import PropTypes from 'prop-types';
 
-import styles from './${name}.scss';
+import styles from './${name}.module.scss';
 
 export const ${name} = () => <div className={styles.${name[0].toLowerCase()}${name.slice(
     1

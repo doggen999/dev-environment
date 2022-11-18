@@ -4,6 +4,7 @@ const path = require("path");
 const indexFileGenerator = require("./generators/indexGenerator");
 const componentFileGenerator = require("./generators/componentGenerator");
 const styleFileGenerator = require("./generators/styleGenerator");
+const storyFileGenerator = require("./generators/storyGenerator");
 
 const name = (process.argv[2] || "").trim();
 
@@ -30,10 +31,12 @@ fs.mkdirSync(componentDir);
 
 const indexFile = path.join(componentDir, "index.js");
 const componentFile = path.join(componentDir, `${componentName}.js`);
-const styleFile = path.join(componentDir, `${componentName}.scss`);
+const styleFile = path.join(componentDir, `${componentName}.module.scss`);
+const storyFile = path.join(componentDir, `${componentName}.stories.js`);
 
 indexFileGenerator.generate(`${componentName}`, indexFile);
 componentFileGenerator.generate(componentName, componentFile);
 styleFileGenerator.generate(componentName, styleFile);
+storyFileGenerator.generate(componentName, storyFile);
 
 console.log(`${componentName} is generated`);
