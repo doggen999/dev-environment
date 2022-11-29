@@ -1,5 +1,8 @@
 # dev-environment
-Basic dev environment with Webpack and Babel 
+A basic dev environment with Webpack and Babel. 
+
+It's like CRA, but without all the magic and I understand everything that is happening!
+
 ## Prerequisites
 Node version `16.18.1`
 
